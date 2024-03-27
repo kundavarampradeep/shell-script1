@@ -12,8 +12,9 @@ P2=Rohit
 echo "$P1 : Hi $P2 , Good Morning"
 echo "$P2 : Hi $P1 , Good Morning"
 
-#!/bin/bash
-echo "shell script run the command inside $() and stores the output into variable called DATE."
+echo "2. Executing the command inside shellscript and storing the output into a variable"
+
+#shell script run the command inside $() and stores the output into variable called DATE.
 DATE=$(date)
 
 echo "This script is executed at timestamp: $DATE "

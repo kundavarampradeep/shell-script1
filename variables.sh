@@ -39,4 +39,5 @@ read -s Password
 
 echo "4. Array" # Instead of single value it holds multiple values
 PERSONS=("ramesh" "suresh" "sachin")
-echo " Who is second person: ${PERSONS[1]}"
+echo " Who is second person: ${PERSONS[1]}" # Here it follows index it starts from zero that means 0 1 2 3 like this
+echo "All persons: ${PERSONS[@]}" #Here @ is all

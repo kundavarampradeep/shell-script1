@@ -29,3 +29,10 @@ NUMBER1=$1
 NUMBER2=$2
 SUM=$((NUMBER1+NUMBER2))
 echo "addition of 2numbers is $SUM "
+
+echo "For username and passwords we use read command"
+echo "Enter username"
+read -s USERNAME
+#if we want to see in terminal we can give like:- entered username : $USERNAME
+echo "Enter Password"
+read -s Password

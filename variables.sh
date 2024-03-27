@@ -2,7 +2,7 @@
 
 echo "We have multiple types in variables"
 
-echo "1. Declaring in side script:-"
+echo "1. Declaring inside script:-"
 
 P1=Sachin
 P2=Rohit
@@ -24,3 +24,8 @@ P2=$2
 
 echo "$P1 : Hi $P2 , Good Morning"
 echo "$P2 : Hi $P1 , Good Morning"
+#Another ex:-
+NUMBER1=$1
+NUMBER2=$2
+SUM=$((NUMBER1+NUMBER2))
+echo "addition of 2numbers is $SUM "

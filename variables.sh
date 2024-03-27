@@ -19,11 +19,11 @@ echo "This script is executed at timestamp: $DATE "
 
 echo "3. Get the values of variables from command line"
 #while executing just give names shell will take orderly. --> sh variables.sh sachin rohit
-P1=$1
-P2=$2
+#P1=$1
+#P2=$2
 
-echo "$P1 : Hi $P2 , Good Morning"
-echo "$P2 : Hi $P1 , Good Morning"
+#echo "$P1 : Hi $P2 , Good Morning"
+#echo "$P2 : Hi $P1 , Good Morning"
 #Another ex:-
 NUMBER1=$1
 NUMBER2=$2

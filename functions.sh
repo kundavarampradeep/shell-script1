@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Here because of date and script name and logfile total data will not appear only installatoin status appear
+#because of &>>$logfile
 DATE=$(date +%F)
 SCRIPT_NAME=$0
 LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log

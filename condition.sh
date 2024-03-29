@@ -1,12 +1,9 @@
 #!/bin/bash
 
-NUMBER=$1
+$USERID=$( id -u)
 
-if [ $NUMBER -gt 10 ] #this means if number is greater than 10 
+if [ $USERID -ne 0 ]
 then
-echo "$NUMBER is greater than 10"
-else
-echo " $NUMBER is not greater than 10"
-
+echo "ERROR :: Please run this with root user"
 fi
-# while executing we have to pass one number
+    yum install mysql -y

@@ -2,7 +2,8 @@
     #!/bin/bash
 
 USERID=$(id -u)
-
+# Here function is validate the previous command and inform to user it is success or not
+# $1 it will recieve the argument1 $2 argument2 $3 argument3
 VALIDATE(){
     if [ $1 -ne 0 ]
     then

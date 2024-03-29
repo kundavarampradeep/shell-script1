@@ -3,7 +3,7 @@
 DATE=$(date +%F)
 SCRIPT_NAME=$0
 LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
-USERID=$(id -u)
+
 # Here function is validate the previous command and inform to user it is success or not
 # $1 it will recieve the argument1 $2 argument2 $3 argument3
 VALIDATE(){
@@ -14,6 +14,9 @@ VALIDATE(){
     echo " $2 .... SUCCESS"
     fi
 }
+
+USERID=$(id -u)
+
 
 if [ $USERID -ne 0 ]
 then

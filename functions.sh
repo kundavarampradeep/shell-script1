@@ -1,5 +1,4 @@
-
-    #!/bin/bash
+#!/bin/bash
 
 USERID=$(id -u)
 # Here function is validate the previous command and inform to user it is success or not

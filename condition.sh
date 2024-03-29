@@ -21,4 +21,7 @@ fi
 
     yum install java -y
     VALIDATE $? " java installation"
+
+    yum install git -y
+    VALIDATE $? " git installation"
     

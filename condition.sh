@@ -5,7 +5,7 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ] #thia means user id is not equal to zero
 then
 echo "ERROR :: Please run this with root user"
-exit 1  # shell or linux will under stand it is error so it will stop till here, linux error is 1 to 127 if it is zero success
+exit 1  # shell or linux will under stand it is error so it will stop till here, linux error is 1 to 127 if it is 0 it's success
 # else
 # echo "INFO:: You are root user"
 fi

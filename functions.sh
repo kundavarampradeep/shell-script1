@@ -1,5 +1,8 @@
 #!/bin/bash
 
+DATE=$(date +%F)
+SCRIPT_NAME=$0
+LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 USERID=$(id -u)
 # Here function is validate the previous command and inform to user it is success or not
 # $1 it will recieve the argument1 $2 argument2 $3 argument3
@@ -17,12 +20,12 @@ then
 echo "ERROR :: Please run this with root user"
 exit 1  
 fi
-    yum install mysql -y
-    VALIDATE $? " mysql installation "
+    yum install mysql -y  &>>$LOGFILE
+    VALIDATE $? " mysql installation " 
 
-    yum install java -y
+    yum install java -y   &>>$LOGFILE
     VALIDATE $? " java installation"
 
-    yum install git -y
+    yum install git -y    &>>$LOGFILE
     VALIDATE $? " git installation"
     

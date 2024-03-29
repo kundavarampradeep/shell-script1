@@ -15,6 +15,7 @@ then
 echo " mysql installation failed"
 else
 echo "mysql installation is successfull"
+fi
     #here the out put is only error, because of exit below script won't execute.
 
   
@@ -24,4 +25,5 @@ then
 echo " java installation failed"
 else
 echo "java installation is successfull"
+fi
     

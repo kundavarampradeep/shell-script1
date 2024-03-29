@@ -11,3 +11,9 @@ exit 1  # shell or linux will under stand it is error so it will stop till here,
 fi
     yum install mysql -y
     #here the out put is only error, because of exit below script won't execute.
+
+    if [ $USERID -ne 0 ]
+    then
+    echo "ERROR :: Please run this script with root user"
+    fi
+    yum install java -y

@@ -8,6 +8,7 @@ VALIDATE(){
     echo " $1 Insatallation .... FAILURE"
     else
     echo " $1 Installation .... SUCCESS"
+    fi
 }
 
 if [ $USERID -ne 0 ] #thia means user id is not equal to zero

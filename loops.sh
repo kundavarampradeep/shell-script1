@@ -26,7 +26,7 @@ VALIDATE(){
  for i in $@
 do
  yum install $i &>>$LOGFILE
- if [ $?-ne 0 ]
+ if [ $? -ne 0 ]
  then
  echo " $i is not installed let's install it "
  yum install $i -y &>>$LOGFILE

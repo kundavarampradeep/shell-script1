@@ -15,9 +15,9 @@ N="\e[0m"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-    echo -e " $2 ....$R FAILURE $N "
+    echo -e " $2 ....$R FAILURE $ "
     else
-    echo -e " $2 .... $G SUCCESS $N "
+    echo -e " $2 .... $G SUCCESS $ "
     fi
 }
 
@@ -33,8 +33,8 @@ fi
     VALIDATE $? " mysql installation " 
 
     yum install java -y  &>>$LOGFILE
-    VALIDATE $? " java installation"
+    VALIDATE $? " java installation "
 
     yum install git -y  &>>$LOGFILE
-    VALIDATE $? " git installation"
+    VALIDATE $? " git installation "
     

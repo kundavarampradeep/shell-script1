@@ -10,7 +10,7 @@ N="\e[0m"
 
 for i in $@
 do
-yum install $i -y &>>$LOGFILE
+yum install $i -y 
 done
 
 VALIDATE=(){

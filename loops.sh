@@ -14,7 +14,7 @@ VALIDATE=(){
     echo -e " $2... $R FAILURE $N "
     else
     echo -e " $2... $Y SUCCESS $N "
-fi
+    fi
 }
  
  USERID=$(id -u)

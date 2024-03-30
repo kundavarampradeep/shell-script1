@@ -8,11 +8,6 @@ R="\e[31m"
 Y="\e[33m"
 N="\e[0m"
 
-for i in $@
-do
-yum install $i -y 
-done
-
 VALIDATE=(){
     if [ $1 -ne 0 ]
     then
@@ -29,3 +24,8 @@ fi
  echo " ERROR :: Please run this with root user "
  exit1
  fi
+
+ for i in $@
+do
+yum install $i -y &>>$LOGFILE
+done

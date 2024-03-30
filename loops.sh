@@ -8,18 +8,15 @@ R="\e[31m"
 Y="\e[33m"
 N="\e[0m"
 
-VALIDATE=(){
-    if [ $1 -ne 0 ]
+VALIDATE(){
+    if [ $1 -ne 0 ];
     then
-    echo -e " $2... $R FAILURE $N "
-    exit1
+        echo -e "Installing $2 ... $R FAILURE $N"
+        exit 1
     else
-    echo -e " $2... $Y SUCCESS $N "
+        echo -e "Installing $2 ... $G SUCCESS $N"
     fi
 }
- 
-
- 
  if [ $USERID -ne 0 ]
  then
  echo -e " ERROR :: Please run this with root user $N "

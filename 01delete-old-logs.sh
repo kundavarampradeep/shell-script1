@@ -1,7 +1,7 @@
 
-APP_LOG_DIR=/home/centos/app-logs
+APP_LOG_DIR=/home/centos/app-logs  #created logs stored here
 DATE=$(date +%F:%H:%M:%S)
-LOGSDIR=/home/centos/shellscript-logs
+LOGSDIR=/home/centos/shellscript-logs   # deleted logs will store here
 SCRIPT_NAME=$0
 LOGFILE=$LOGSDIR/$SCRIPT_NAME-$DATE.log
 

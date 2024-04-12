@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USER=$roboshop
+USER="roboshop"
 
 if id -u "$USER" &>/dev/null; 
 then

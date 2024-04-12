@@ -2,6 +2,7 @@
 
 USER="roboshop"
 directory="app"
+USERID=$(id -u)
 
 if [ $USERID -ne 0 ];
 then

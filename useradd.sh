@@ -13,7 +13,7 @@ fi
 
 if [ ! -d "$directory" ]; 
 then
-    mkdir "$directory"
+    mkdir "$directory"  &>>$LOGFILE
     echo "Directory created."
 else
     echo "Directory already exists."

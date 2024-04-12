@@ -11,7 +11,7 @@ else
     echo "User $USER added successfully."
 fi
 
-if [! -d "$directory"]; 
+if [ ! -d "$directory" ]; 
 then
     mkdir "$directory"
     echo "Directory created."

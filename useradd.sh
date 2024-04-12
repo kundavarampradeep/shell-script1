@@ -3,6 +3,12 @@
 USER="roboshop"
 directory="app"
 
+if [ $USERID -ne 0 ];
+then
+    echo -e "$R ERROR:: Please run this script with root access $N"
+    exit 1
+fi
+
 if id -u "$USER" &>/dev/null; 
 then
     echo 'user already exists'
